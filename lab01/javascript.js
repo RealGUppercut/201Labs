@@ -18,6 +18,5 @@ function userInfo() {
     else { 
     alert("That's not a month, you silly goose!")
     }
-    
+        }
     }
-}
