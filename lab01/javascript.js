@@ -6,6 +6,7 @@ function userInfo() {
         return userInfo();
     }
     else {
+    function userMonth() {
         let monthNumber = prompt("It's great to meet you " + userName + "! \nMay I ask what month you were born in? (1-12)", 1);
         console.log(monthNumber);
         const months = ["a month that you want to keep secret?", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -17,7 +18,9 @@ function userInfo() {
         }
         else { 
             alert("That's not a month, you silly goose!")
+            return userMonth();
         }
         
     }
+}
 }
