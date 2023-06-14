@@ -21,15 +21,19 @@ function userMonth() {
     const months = ["a month that you want to keep secret?", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     if (monthNumber >= 0 && monthNumber <= 12) {
         let monthText = (months)[monthNumber];
-        console.log(monthText);
-        let birthYear = prompt("So you were born in " + monthText + "? Cool! \nWhat year were you born?");
-        console.log(Number(birthYear));
         const date = new Date();
         console.log(date);
+        var month = date.getMonth();
+        console.log(Number(month));
+        let monthCheck = Number((months)[month]);
+        console.log(monthText);
+        console.log(Number(monthCheck));
+        let birthYear = prompt("In what year were you born, " + userName + "?");
+        console.log(Number(birthYear));
         var year = date.getFullYear();
-        console.log(year);
-        let ageCalc = year - Number(birthYear);
-        console.log(ageCalc);
+        console.log(Number(year));
+        let ageCalc = (year - birthYear) + (month - monthCheck);
+        console.log(Number(ageCalc));
         alert("Wow! No Way! That makes you " + ageCalc + " years old!?\nLooking good! You don't look a day over " + (ageCalc-1) + "!")
     }
     else {
