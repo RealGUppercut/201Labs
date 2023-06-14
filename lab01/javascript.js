@@ -29,6 +29,7 @@ function userAge() {
         monthMod = monthMod > 1 ? 0 : monthMod;
         let ageCalc = (year - (Number(birthYear) - monthMod));
         alert("Wow! No Way! That makes you " + ageCalc + " years old!?\nLooking good! You don't look a day over " + (ageCalc-1) + "!")
+        
     }
     else {
         alert("That's not a month, you silly goose!");
