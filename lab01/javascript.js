@@ -1,10 +1,4 @@
 let userName =""
-let monthNumber =""
-let monthText =""
-let birthYear =""
-let finalAge =""
-let monthCheck =""
-let ageCalc =""
 function userInfo() {
     userName = prompt("Hi there! What is you name?");
     if (userName =="") {
